@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+List.create(
+      name: 'Skiing',
+      destination: 'Vermont',
+      category: 'Active',
+      season: 'Winter',
+      items: ['boots', 'gloves']
+    )
+    List.create(
+      name: 'Universal',
+      destination: 'Orlando, FL',
+      category: 'Sun',
+      season: 'Summer',
+      items: ['swimsuit', 'shorts']
+    )
+  
+  
+  puts "Seeded database"

@@ -9,16 +9,18 @@ List.create(
       name: 'Skiing',
       destination: 'Vermont',
       category: 'Active',
-      season: 'Winter',
-      items: ['boots', 'gloves']
     )
-    List.create(
-      name: 'Universal',
-      destination: 'Orlando, FL',
+List.create(
+      name: 'Beach VK',
+      destination: 'Miami, FL',
       category: 'Sun',
-      season: 'Summer',
-      items: ['swimsuit', 'shorts']
     )
-  
+Item.create([
+        {name: 'boots', list_id: 1},
+        {name:'gloves', list_id: 1}, 
+        {name:'swimsuit', list_id: 2}, 
+        {name:'sandals', list_id: 2}, 
+    
+])
   
   puts "Seeded database"

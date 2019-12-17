@@ -10,7 +10,7 @@ class ListsController < ApplicationController
 
   # GET /lists/1
   def show
-    render json: @list
+    render json: @list.to_json(include: :items)
   end
 
   # POST /lists
@@ -46,6 +46,6 @@ class ListsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def list_params
-      params.require(:list).permit(:name, :destination, :category, :season, :items)
+      params.require(:list).permit(:name, :destination, :category)
     end
 end

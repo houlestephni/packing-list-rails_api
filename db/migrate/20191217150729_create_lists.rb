@@ -4,8 +4,6 @@ class CreateLists < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :destination
       t.string :category
-      t.string :season
-      t.string :items, array: true, default: []
 
       t.timestamps
     end

@@ -4,12 +4,8 @@ one:
   name: MyString
   destination: MyString
   category: MyString
-  season: MyString
-  items: MyString
 
 two:
   name: MyString
   destination: MyString
   category: MyString
-  season: MyString
-  items: MyString

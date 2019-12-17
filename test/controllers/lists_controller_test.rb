@@ -12,7 +12,7 @@ class ListsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create list" do
     assert_difference('List.count') do
-      post lists_url, params: { list: { category: @list.category, destination: @list.destination, items: @list.items, name: @list.name, season: @list.season } }, as: :json
+      post lists_url, params: { list: { category: @list.category, destination: @list.destination, name: @list.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ListsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update list" do
-    patch list_url(@list), params: { list: { category: @list.category, destination: @list.destination, items: @list.items, name: @list.name, season: @list.season } }, as: :json
+    patch list_url(@list), params: { list: { category: @list.category, destination: @list.destination, name: @list.name } }, as: :json
     assert_response 200
   end
 
